@@ -1,0 +1,44 @@
+/* Created by emanana @WeThinkCode_*/
+
+Adjacency List
+
+what exactly is na adjacency list ?.
+
+lets get to th basics first.___________________________________________________________________________________
+_______________________________________________________________________________________________________________
+.1) a node is simply a struct.  denote a node as this box here =    [node].
+.2) an Array (a chain) of nodes is a list . denote a list as   =    [code]->[node]->[node]->[node]->NULL;
+
+.3) then a graph is a chain of list
+
+[code]->[node]->[node]->[node]->NULL
+   |
+[code]->[node]->[node]->NULL
+   |
+[code]->[node]->[node]->[node]->NULL
+   |
+[code]->[node]->NULL
+
+now lets dicuss what an Adjacency list is.
+
+4) looking back at (.3) a linked list, linked to another linked list.
+
+Adjacency List Structure.______________________________________________________________________________________
+_______________________________________________________________________________________________________________
+
+The simplest adjacency list needs a node data structure to store a vertex and a graph data structure to 
+organize the nodes.
+
+a graph can be defined as G = (V, E);
+where E is an edge (the link/connection between two nodes(vertices).
+ 
+for example you can identify a graphs with 4 vertices by their indices i.e) 0 1 2 3 4.
+meaning you have 4 differnt nodes connected to each other.
+
+like the example below;
+
+[0]->[1]->NULL;
+ |
+[1]->[2]->[3]->NULL;
+ |
+[2]->[1]->[4]->NULL;
