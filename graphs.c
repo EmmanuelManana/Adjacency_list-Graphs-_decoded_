@@ -87,7 +87,7 @@ void printGraph(t_graph *graph)
     while  (i < graph->numVertices)
     {
         t_node *temp = graph->adjLists[i];
-        printf("\n Adjacency list of vertex %d\n ", v);
+        printf("\n Adjacency list of vertex %d\n ", i);
         while (temp)
         {
             printf("%d -> ", temp->v);
